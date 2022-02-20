@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quinela</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Quinela velada del año 2</h1>
+    </header>
+
+    <section>
+      <div class="img">
+        <div>
+          <img onclick="pelea(1,1)" src="https://esports.as.com/2021/07/09/Carola.jpg?hash=2d5c036dcf10aefad4b76d0cf170f4699d006737" alt="">
+          <p>Carola</p>
+        </div>
+        <p>VS</p>
+        <div>
+          <img onclick="pelea(1,2)" src="https://yt3.ggpht.com/ytc/AKedOLRtFOP3s_ZZqBb7iyYlJaHKqBgQcBKVpjq1ZKdM0Q=s900-c-k-c0x00ffffff-no-rj" alt="">
+          <p>Spursito</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="img">
+        <div>
+          <img onclick="pelea(2,1)" src="https://www.famousbirthdays.com/faces/benavides-geronimo-image.jpg" alt="">
+          <p>MOMO</p>
+        </div>
+        <p>VS</p>
+        <div>
+          <img onclick="pelea(2,2)" src="https://pbs.twimg.com/profile_images/1426573088406261760/B7-ThZm3_400x400.jpg" alt="">
+          <p>ByViruzz</p>
+      </div>
+      </div>
+    </section>
+    <section>
+      <div class="img">
+        <div>
+          <img onclick="pelea(3,1)" src="https://www.egames.news/__export/1602255304545/sites/debate/img/2020/10/09/cropw0h009.jpg_423682103.jpg" alt="">
+          <p>Ari</p>
+        </div>
+        <p>VS</p>
+        <div>
+          <img onclick="pelea(3,2)" src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2021/01/25/16115929197951.jpg" alt="">
+          <p>Paracetamor</p>
+      </div>
+        </div>
+    </section>
+    <section>
+      <div class="img">
+        <div>
+          <img onclick="pelea(3,1)" src="" alt="">
+          <p>X</p>
+        </div>
+        <p>VS</p>
+        <div>
+          <img onclick="pelea(3,2)" src="" alt="">
+          <p>X</p>
+      </div>
+        </div>
+    </section>
+    <section>
+      <div class="img">
+        <div>
+          <img onclick="pelea(3,1)" src="" alt="">
+          <p>X</p>
+        </div>
+        <p>VS</p>
+        <div>
+          <img onclick="pelea(3,2)" src="" alt="">
+          <p>X</p>
+      </div>
+        </div>
+    </section>
+  </main>
+  <script>
+    function pelea(p,j){
+      j = j == 1 ? 0 : 2;
+      document.querySelector('main').children[p].children[0].children[j].children[0].classList.add('active')
+      document.querySelector('main').children[p].children[0].children[j = j == 0 ? 2 : 0].children[0].classList.remove('active')
+    }
+  </script>
+</body>
+</html>

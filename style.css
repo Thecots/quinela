@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+
+main{
+  max-width: 100%;
+  width: 1200px;
+  margin: 20px auto;
+}
+
+main header{
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+}
+
+main header h1{
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+section{
+  width: 100%;
+  min-height: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+}
+
+section .img{
+  position: relative;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+section .img div{
+  width: 300px;
+  margin: 5px 0px;
+}
+
+section .img img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  filter: grayscale(1);
+  transition: filter 0.3s, transform 0.3s;
+}
+
+section .img div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+section .img div{
+  width: 120px;
+  font-size: 25px;
+}
+
+.img img:hover{
+  filter: grayscale(0);
+}
+
+.img img:active{
+  transform: scale(0.97);
+}
+
+.active{
+  filter: grayscale(0) !important;
+  box-shadow: 0 0 0 4px rgb(113, 243, 113);
+}
